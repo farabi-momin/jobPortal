@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+    <head>
+      <title>Register as Employee</title>
+        <style>
+            body {
+              font-family: Arial, Helvetica, sans-serif;
+              background-color: rgb(236, 255, 236);
+            }
+            
+            * {
+              box-sizing: border-box;
+            }
+            
+            /* Add padding to containers */
+            .container {
+              padding: 30px; background-color: white; max-width: fit-content;margin-left: auto;margin-right: auto;margin-top: auto;border-color: green;border-width: 2px;
+            }
+            
+            /* Full-width input fields */
+            input[type=text], input[type=password],[type=email] {
+              width: 100%;
+              padding: 15px;
+              margin: 5px 0 22px 0;
+              display: inline-block;
+              border: none;
+              background: #f1f1f1;
+            }
+            
+            input[type=text]:focus, input[type=password]:focus {
+              background-color: #ddd;
+              outline: none;
+            }
+            
+            /* Overwrite default styles of hr */
+            hr {
+              border: 1px solid #f1f1f1;
+              margin-bottom: 25px;
+            }
+            
+            /* Set a style for the submit button */
+            .registerbtn {
+              background-color: #04AA6D;
+              color: white;
+              padding: 16px 20px;
+              margin: 8px 0;
+              border: none;
+              cursor: pointer;
+              width: 100%;
+              opacity: 0.9;
+            }
+            
+            .registerbtn:hover {
+              opacity: 1;
+            }
+            
+            /* Add a blue text color to links */
+            a {
+              color: dodgerblue;
+            }
+            
+            /* Set a grey background color and center the text of the "sign in" section */
+            .signin {
+              background-color: #f1f1f1;
+              text-align: center;
+            }
+            .button {
+                background-color: green; /* Green */
+                border: none;
+                color: rgb(255, 255, 255);
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                padding: 16px 32px;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+              }
+              
+              .button1 {
+                background-color: green; 
+                color: white; 
+              }
+              
+              .button1:hover {
+                color: rgb(196, 233, 196);
+              }
+            
+            </style>    
+    </head>
+    <body>
+    <div class = "container">
+            <h1> Creat an account </h1>
+
+            <form name = "form" action = "registerE.php" method = "POST" enctype="multipart/form-data">
+                <h2>Personal Information</h2>
+                <label> Name:    </label>
+                <input type = "text" name = "name" id = "name" required><br><br>
+                <label> Email: </label>
+                <input type = "email" name = "email" id = "email" required><br><br>
+                <label> Phone No: </label>
+                <input type = "text" name = "phoneNo" id = "phoneNo" required><br><br>
+                <label> Password: </label>
+                <input type = "password" name = "password" id = "password"required><br><br><hr>
+
+                <label> Universit:    </label>
+                <input type = "text" name = "university" id = "university" required><br><br>
+                <label> Subject:    </label>
+                <input type = "text" name = "subject" id = "subject" required><br><br>
+                <label> Passing Grade:    </label>
+                <input type = "text" name = "grade" id = "grade" required><br><br>
+                <label> Experience Level: </label>
+                <input type = "radio" name = "experience" id = "experience" value = "Entry"><label>Entry</label>
+                <input type = "radio" name = "experience" id = "experience" value = "Junior"><label>Junior</label>
+                <input type = "radio" name = "experience" id = "experience" value = "Senior"><label>Senior</label><br><br>
+
+                <label>Upload your resume: </label>
+                <input class="button button1" type="file" name="cv" id="cv" accept="application/pdf"><br>
+                
+                <input class="button button1" type = "submit" id = "submit-btn" value = "Create Account" name = "submit">
+            </form>
+        </div>
+    </body>
+</html>

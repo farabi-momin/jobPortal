@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+    <head></head>
+    <body></body>
+</html>
+
+
+select j.jid,j.jname, j.rid, j.cid, c.cname j.jdepartment, j.jdesignation, j.jdiscription, j.experience, j.status,c. country, c.city, a.eid, a.status from jobs as j inner join company as c on j.cid = c.cid right join applications as a on a.jid = j.jid;
+
+j.jid,j.jname, j.rid, j.cid, c.cname j.jdepartment, j.jdesignation, j.jdiscription, j.experience, j.status,c. country, c.city, a.eid, a.status 
+select j.jid,jname, j.rid, j.cid, cname, jdepartment, jdesignation, jdiscription, experience, j.status,country, city, eid, a.status, j.deadline from jobs as j join company as c on j.cid = c.cid right join applications as a on a.jid = j.jid where a.eid !='1672123761' and j.status = 'yes'
+
+update applications set status='yes' where jid = '$jid' and eid = '$eid'
